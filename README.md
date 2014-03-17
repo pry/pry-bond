@@ -16,6 +16,20 @@ __FEATURES__
 - provides `bond!` command for switching to bond completion inside a repl session.
 - provides a file for require to change pry default(`Pry::InputCompleter`) to `Pry::BondCompleter`.
 
+__EXAMPLES__
+
+make the default
+
+```ruby
+require "pry/bond/default"
+```
+
+in a repl session
+
+```
+[1] pry(main)> bond!
+```
+
 __RUBIES__
 
 i always try to support every ruby implementation unless it is very hard to do
