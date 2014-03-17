@@ -38,11 +38,11 @@ bond input completion has been disabled and the pry default has been restored.
 ```
 
 
-__RUBIES__
+__DEPENDENCIES__
 
-i always try to support every ruby implementation unless it is very hard to do
-or sometimes impossible. the [.travis.yml](https://github.com/pry/pry-bond/blob/master/.travis.yml)
-file keeps a list of files the tests of this project are run against.
+pry-bond depends on:
+- pry `~> 0.10`
+- bond `~> 0.5`
 
 __CONTRIBUTE!__
 
