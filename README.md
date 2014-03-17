@@ -1,7 +1,7 @@
 | Project         | pry-bond
 |:----------------|:--------------------------------------------------
-| homepage        | https://github.com/johnny5-/pry-bond
-| build           | [![Build Status](https://travis-ci.org/johnny5-/pry-bond.png)](https://travis-ci.org/johnny5-/pry-bond)
+| homepage        | https://github.com/pry/pry-bond
+| build           | [![Build Status](https://travis-ci.org/pry/pry-bond.png)](https://travis-ci.org/pry/pry-bond)
 
 __DESCRIPTION__
 
@@ -41,19 +41,19 @@ bond input completion has been disabled and the pry default has been restored.
 __RUBIES__
 
 i always try to support every ruby implementation unless it is very hard to do
-or sometimes impossible. the [.travis.yml](https://github.com/johnny5-/pry-bond/blob/master/.travis.yml)
+or sometimes impossible. the [.travis.yml](https://github.com/pry/pry-bond/blob/master/.travis.yml)
 file keeps a list of files the tests of this project are run against.
 
 __CONTRIBUTE!__
 
-[fork it](https://github.com/johnny5-/pry-bond/fork), clone, change.
+[fork it](https://github.com/pry/pry-bond/fork), clone, change.
 
 __tips__
 
 install runtime and development dependencies with bundler.
 
 ```
-$ git clone https://github.com/johnny5-/pry-bond.git
+$ git clone https://github.com/pry/pry-bond.git
 $ cd pry-bond
 $ bundle install
 ```
