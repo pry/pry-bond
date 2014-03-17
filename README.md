@@ -14,7 +14,7 @@ __FEATURES__
 
 - provides input completion in pry through the `bond` rubygem.
 - provides `enable-bond!` command for switching to bond completion inside a repl session.
-- provides `disable-bond!` command for switching back the pry default.
+- provides `disable-bond!` command for switching back the pry default inside a repl session.
 - provides a file for require to change pry default(`Pry::InputCompleter`) to `Pry::BondCompleter`.
 
 __EXAMPLES__
