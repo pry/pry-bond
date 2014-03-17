@@ -7,13 +7,14 @@ __DESCRIPTION__
 
 pry-bond offers input completion in the [pry](https://github.com/pry/pry) repl through
 the [bond](https://github.com/cldwalker/bond) rubygem. the default input completion for
-pry has been inherited from IRB, and generally bond offers better completion and more
-extensibility options through gems like [bond-yard](https://github.com/cldwalker/bond-yard).
+pry has been inherited from IRB but bond offers more extensibility options through gems like
+[bond-yard](https://github.com/cldwalker/bond-yard).
 
 __FEATURES__
 
 - provides input completion in pry through the `bond` rubygem.
-- provides `bond!` command for switching to bond completion inside a repl session.
+- provides `enable-bond!` command for switching to bond completion inside a repl session.
+- provides `disable-bond!` command for switching back the pry default.
 - provides a file for require to change pry default(`Pry::InputCompleter`) to `Pry::BondCompleter`.
 
 __EXAMPLES__
@@ -27,8 +28,15 @@ require "pry/bond/default"
 in a repl session
 
 ```
-[1] pry(main)> bond!
+[1] pry(main)> enable-bond!
+bond input completion has been enabled and is ready to use!
+--
+
+[2] pry(main)> disable-bond!
+bond input completion has been disabled and the pry default has been restored.
+--
 ```
+
 
 __RUBIES__
 

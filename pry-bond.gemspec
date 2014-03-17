@@ -1,4 +1,4 @@
-require "./lib/pry/bond/version.rb"
+require "./lib/pry/bond/version"
 Gem::Specification.new do |spec|
   spec.name          = "pry-bond"
   spec.version       = Pry::Bond::VERSION
