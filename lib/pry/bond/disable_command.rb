@@ -9,13 +9,8 @@ class Pry::Bond::DisableCommand < Pry::ClassCommand
   BANNER
 
   def process
-    _pry_.config.completer = default.completer
+    _pry_.config.forget(:completer)
     output.puts heading("bond input completion has been disabled and the pry default has been restored.")
-  end
-
-private
-  def default
-    Pry.config.default
   end
   Pry.commands.add_command(self)
 end
