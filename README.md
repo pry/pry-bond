@@ -46,7 +46,12 @@ pry-bond depends on:
 
 __CONTRIBUTE!__
 
-[fork it](https://github.com/pry/pry-bond/fork), clone, change.
+1. [fork it](https://github.com/pry/pry-bond/fork)
+2. clone forked repository (`git clone https://github.com/your-name/pry-bond.git`)
+3. create feature branch (`git checkout -b new-feature`)
+4. commit your changes (`git commit -am 'Add new feature'`)
+5. push to the branch (`git push origin new-feature`)
+6. create new Pull Request
 
 __tips__
 
