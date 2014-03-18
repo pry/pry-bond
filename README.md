@@ -42,13 +42,13 @@ __DEPENDENCIES__
 
 pry-bond depends on:
 
-- pry `~> 0.10`
+- pry `~> 0.10` <br>
   the repl!
 
-- bond `~> 0.5`
+- bond `~> 0.5` <br>
   provides input completion
 
-- rb-readline `~> 0.5`
+- rb-readline `~> 0.5` <br>
   provides pure ruby implementation of readline that removes platform compatibility issues with C
   version and editline(OSX).
 
