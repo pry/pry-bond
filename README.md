@@ -41,8 +41,16 @@ bond input completion has been disabled and the pry default has been restored.
 __DEPENDENCIES__
 
 pry-bond depends on:
+
 - pry `~> 0.10`
+  the repl!
+
 - bond `~> 0.5`
+  provides input completion
+
+- rb-readline `~> 0.5`
+  provides pure ruby implementation of readline that removes platform compatibility issues with C
+  version and editline(OSX).
 
 __CONTRIBUTE!__
 

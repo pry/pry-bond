@@ -13,4 +13,5 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 1.9.2"
   spec.files = `git ls-files lib doc LEGAL.txt`.split($/)
   spec.add_runtime_dependency "bond", "~> 0.5"
+  spec.add_runtime_dependency "rb-readline", "~> 0.5"
 end
