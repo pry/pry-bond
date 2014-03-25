@@ -1,4 +1,4 @@
-class Pry::Bond::EnableCommand < Pry::ClassCommand
+class Pry::BondCompleter::EnableCommand < Pry::ClassCommand
   match 'enable-bond!'
   group 'bond'
   description 'enable input completion through the `bond` rubygem.'

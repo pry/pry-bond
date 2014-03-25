@@ -1,7 +1,7 @@
 require "./lib/pry/bond/version"
 Gem::Specification.new do |spec|
   spec.name          = "pry-bond"
-  spec.version       = Pry::Bond::VERSION
+  spec.version       = Pry::BondCompleter::VERSION
   spec.authors       = ["Public Domain"]
   spec.email         = ["robert@flowof.info"]
   spec.description   = "pry-bond provides input completion in pry through the `bond` rubygem."
