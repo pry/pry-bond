@@ -1,2 +1,2 @@
 require "pry-bond"
-Pry.config.completer = Proc.new { Pry::BondCompleter.start }
+Pry.config.completer = Pry::BondCompleter.start

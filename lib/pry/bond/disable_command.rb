@@ -1,4 +1,4 @@
-class Pry::Bond::DisableCommand < Pry::ClassCommand
+class Pry::BondCompleter::DisableCommand < Pry::ClassCommand
   match 'disable-bond!'
   group 'bond'
   description 'disable input completion through the `bond` rubygem.'
