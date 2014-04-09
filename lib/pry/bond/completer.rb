@@ -30,7 +30,7 @@ class Pry
       })
     end
 
-    def self.with_pry_instance instance
+    def self.with_pry instance
       @lock.synchronize do
         begin
           @current_pry_instance = instance
@@ -41,22 +41,22 @@ class Pry
       end
     end
 
-    def initialize pry_instance
+    def initialize input, pry = nil
       BondCompleter.setup if BondCompleter.bond.nil?
-      @pry_instance = pry_instance
+      @pry = pry
+      @input = input
     end
 
-    def call(input, options)
-      BondCompleter.with_pry_instance(@pry_instance) {BondCompleter.bond.agent.call(input, get_full_line_input || input)}
+    def call str, options
+      BondCompleter.with_pry(@pry) {BondCompleter.bond.agent.call(str, get_full_line_input || str)}
     end
 
     protected
     def get_full_line_input
-      input = @pry_instance.input
-      if input.respond_to?(:line_buffer)
-        input.line_buffer
-      elsif input.respond_to? :line
-        input.line
+      if @input.respond_to?(:line_buffer)
+        @input.line_buffer
+      elsif @input.respond_to? :line
+        @input.line
       else
         nil
       end
