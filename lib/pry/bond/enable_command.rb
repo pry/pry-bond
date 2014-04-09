@@ -8,7 +8,7 @@ class Pry::BondCompleter::EnableCommand < Pry::ClassCommand
   BANNER
 
   def process
-    _pry_.config.completer = Pry::BondCompleter.start
+    _pry_.config.completer = Pry::BondCompleter
     output.puts heading("bond input completion has been enabled and is ready to use!")
   end
   Pry.commands.add_command(self)
