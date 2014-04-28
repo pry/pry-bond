@@ -1,5 +1,5 @@
 class Pry
-  module BondCompleter
+  class BondCompleter
     VERSION = "0.0.1"
   end
 end
