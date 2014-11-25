@@ -7,3 +7,4 @@ require_relative "bond/disable_command"
 # pointing to the "wrong" module
 class Pry::BondCompleter
 end
+Pry.config.completer = Pry::BondCompleter
