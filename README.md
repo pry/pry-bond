@@ -14,13 +14,13 @@ __Features__
 
 __Examples__
 
-make the default
+add the following to "$HOME/.pryrc" to make pry-bond the default completer.
 
 ```ruby
 require "pry/bond/default"
 ```
 
-in a repl session
+enable/disable in a repl session
 
 ```
 [1] pry(main)> enable-bond!
